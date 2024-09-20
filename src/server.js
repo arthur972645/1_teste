@@ -14,8 +14,13 @@ import UsuariosRotas from "./routes/UsuarioRoutes.js"
 
 
 
-const PORT = 3333
+const PORT = 5555
 const app = express()
+
+
+app.use(cors());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 //Conexão com o banco
 conn

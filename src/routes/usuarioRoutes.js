@@ -1,6 +1,5 @@
 import { Router } from "express";
-import express from 'express'
-const app = express();
+import bodyParser from 'body-parser';
 
 import {
     cadastrar,
